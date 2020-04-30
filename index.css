@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3 {
+    padding:.2em 0;
+    margin:.2em 0;
+}
+h1 {
+    color:#999;
+    border-bottom:1px solid #999;
+}
+h3 {
+    border-bottom:1px solid #b6ceee;
+    text-align:right;
+}
+
+form {
+    width:100%;
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: left;
+}
+
+input {
+    padding:0.4em;
+    margin:.1em;
+    border-radius: .2em;
+    border:1px solid #999;
+    font-size:1.2em;
+}
+
+#city {
+    min-width:100px;
+    max-width:200px;
+}
+
+#state {
+    min-width:40px;
+    max-width:60px;
+}
+
+#zip {
+    min-width:50px;
+    max-width:100px;
+}
+
+#submit {
+    padding:.5em;
+    font-weight:bold;
+    font-size:1.1em;
+    cursor:pointer;
+    border-radius:.3em;
+    border:1px solid #b9f5bc;
+    background-color:#6dff74;
+    transition: background-color .5s ease-out;
+    color:#202020;
+    text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+  min-width:80px;
+}
+
+#submit:hover {
+    background-color:#b9f5bc;
+    color:#000;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.weather-card {
+    width:200px;
+    
+    border-radius: 0.2em;
+    border:1px solid #999;
+    padding:.3em;
+    margin:.2em;
+}
+
+.card-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-box {
+    width:100px;
+    text-align:center;
+    border:1px solid #999;
+    border-radius: .1em;
+    background:#b6ceee;
+}
+
+.image-box label {
+    font-weight:bold;
+    text-transform: capitalize;
+    font-size:.7em;
+}
+
+.current-temp {
+    font-size:4em;
+    font-weight:bold;
+    border-bottom:1px solid #000;
+
+}
+
+.freezing {
+    color:#c5dbf8;
+}
+
+.cold {
+    color:#33f7e7;
+}
+.comfortable{
+    color:#33f73d
+}
+.hot{
+    color:#eb920e
+}
+.hell {
+    color:#eb0e0e
+}
+
+.high,.low{
+    font-weight:bold;
+    font-size:1.2em;
+}
+
+.close {
+    position: relative;
+    right: 170px;
+    top: -10px;
+    background: red;
+    border: 2px solid;
+    font-weight: bold;
+    border-radius: .3em;
+    cursor: pointer;
+}
+
+.error {
+    background:#f55151;
+    padding:.6em;
+    margin:.1em;
+    font-weight:bold;
+    border-radius: .2em;
+}
